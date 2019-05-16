@@ -67,10 +67,16 @@ vagrant up
 
 如果是首次部署，会自动下载`centos/7`的box，这需要花费一些时间，另外每个节点还需要下载安装一系列软件包，整个过程大概需要10几分钟。
 
-如果您在运行`vagrant up`的过程中发现无法下载`centos/7`的box，可以手动下载后将其添加到vagrant中。
 
+如果您在运行`vagrant up`的过程中发现无法下载`centos/7`的box，可以手动下载后将其添加到vagrant中。
+#自己修改的地方start
 注意：如果是在虚拟机环境下（如vmware workstation）操作，需要开始cpu的虚拟化引擎，如Intel VT-x/EPT或者AMD-V/RVI
 并且uname-r查看系统内核并安装对应内核版本的kernel-devl-xxx
+
+注意，正式启动之前，需检查防火墙配置，如果是自己的测试环境，推荐关闭防火墙或者清空防火墙配置（firewalld，iptables都需要检查）
+确保nfs服务是正常启动、正常运行的
+
+#自己修改的地方end
 
 **手动添加centos/7 box**
 
