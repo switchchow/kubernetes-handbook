@@ -69,6 +69,9 @@ vagrant up
 
 如果您在运行`vagrant up`的过程中发现无法下载`centos/7`的box，可以手动下载后将其添加到vagrant中。
 
+注意：如果是在虚拟机环境下（如vmware workstation）操作，需要开始cpu的虚拟化引擎，如Intel VT-x/EPT或者AMD-V/RVI
+并且uname-r查看系统内核并安装对应内核版本的kernel-devl-xxx
+
 **手动添加centos/7 box**
 
 ```bash
