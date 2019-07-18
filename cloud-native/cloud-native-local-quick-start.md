@@ -137,6 +137,12 @@ kubectl get nodes
 
 还可以直接通过dashboard UI来访问：https://172.17.8.101:8443
 
+"""
+自己的注释
+如果dashboard没有启动，那么可能需要自己启动
+进入到node1节点 kubectl create -f /xxx/xx/dashboard.yml
+"""
+
 可以在本地执行以下命令获取token的值（需要提前安装kubectl）：
 
 ```bash
