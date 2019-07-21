@@ -112,6 +112,10 @@ kubectl get nodes
 **Kubernetes dashboard**
 
 还可以直接通过dashboard UI来访问：https://172.17.8.101:8443
+```
+这里如果是windows安装vmware虚拟的情况下，需要在VMware虚拟机内部安装个代理（nginx）将请求转发到vgrant内部.
+
+```
 
 可以在本地执行以下命令获取token的值（需要提前安装kubectl）：
 
