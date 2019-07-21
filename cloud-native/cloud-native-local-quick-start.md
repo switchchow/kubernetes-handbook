@@ -138,12 +138,16 @@ kubectl get nodes
 还可以直接通过dashboard UI来访问：https://172.17.8.101:8443
 ```
 我的环境Windows VMware虚拟机，就需要在VMware虚拟机内部安装代理，将来自Windows的请求转发到vgrant内部的虚拟机去
+关于dashboard的访问，可以参考这篇文章https://www.jianshu.com/p/9c8aac2008ab?tdsourcetag=s_pcqq_aiomsg
 ```
 
 """
 自己的注释
 如果dashboard没有启动，那么可能需要自己启动
 进入到node1节点 kubectl create -f /xxx/xx/dashboard.yml
+"""
+"""
+
 """
 
 可以在本地执行以下命令获取token的值（需要提前安装kubectl）：
