@@ -136,6 +136,9 @@ kubectl get nodes
 **Kubernetes dashboard**
 
 还可以直接通过dashboard UI来访问：https://172.17.8.101:8443
+```
+我的环境Windows VMware虚拟机，就需要在VMware虚拟机内部安装代理，将来自Windows的请求转发到vgrant内部的虚拟机去
+```
 
 """
 自己的注释
